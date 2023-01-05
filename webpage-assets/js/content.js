@@ -68,11 +68,14 @@ window.addEventListener("load", function load(event) {
         synth.speak(msg);
       }
 
-      // else if (action === 'stop-speech') {
-      //   if (synth.speaking) {
-      //     synth.cancel();
-      //   }
-      // }
+      else if (action === 'stop-speech') {
+        /* console.log('stoping') */
+         if (synth.speaking) {
+           synth.cancel();
+        }
+       const msg = new SpeechSynthesisUtterance("Deactivating Speaking");
+        synth.speak(msg)
+      }
 
       else if (action === 'link-highlight') {
         const links = document.getElementsByTagName('a');

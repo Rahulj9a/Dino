@@ -52,6 +52,7 @@ for (let i = 0; i < textToSpeech.length; i++) {
     }
     )
 }
+ 
 
 const textToSpeechStop = document.getElementsByClassName('stop-speech');
 for (let i = 0; i < textToSpeechStop.length; i++) {
